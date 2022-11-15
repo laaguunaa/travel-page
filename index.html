@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+    <!-- Масштабирование -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Описание страницы -->
+    <meta name="description" content="Страничка путешественника">
+    <!-- Ключевые слова -->
+    <meta name="keywords" content="html, css, flex, grid, javascript">
+    <!-- Автор -->
+    <meta name="author" content="Angelina Rozhkova">
+    <!-- Название в закладках -->
+    <title>Страничка путешественника</title>
+    <!-- Подключение отдельных файлов: стили и шрифты -->
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body>
+    <div class="page">
+      <div class="page__conteiner">
+
+        <header class="header">
+                <img class="header__logo" src="./images/header__logo.svg" alt="Место">
+        </header>
+
+        <main class="content">
+
+          <section class="profile">
+            <div class="profile__info">
+              <img class="profile__avatar" src="./images/ava.jpg" alt="Аватар">
+              <div class="profile__heading">
+                <div class="profile__text">
+                  <h1 class="profile__name">Маргарита Жданова</h1>
+                  <button class="profile__edit-button" type="button" aria-label="Кнопка для редактирования профиля"></button>
+                </div>
+                <p class="profile__about-me">Путешественник-любитель</p>
+              </div>
+            </div>
+            <button class="profile__add-button" type="button" aria-label="Кнопка для добавления нового фото"></button>
+          </section>
+
+          <section class="elements">
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__aslykul.jpg" alt="Асылыкуль">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Асылыкуль</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__dema.jpg" alt="Дёма">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Дёма</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__kandrikul.jpg" alt="Кандрыкуль">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Кандрыкуль</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__inzer.jpg" alt="Инзер">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Инзер</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__blue-like.jpg" alt="Голубое озеро">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Голубое озеро</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__nugush.jpg" alt="Нугуш">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Нугуш</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__ural-mountains.jpg" alt="Уральские горы">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Уральские горы</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__pavlovka.jpg" alt="Павловка">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Павловка</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+            <figure class="element">
+              <img class="element__img" src="./images/elem__shihan-toratau.jpg" alt="Торатау">
+              <figcaption class="element__caption">
+                <h2 class="element__text">Торатау</h2>
+                <button class="element__like-button" type="button" aria-label="Кнопка со значением Нравится"></button>
+              </figcaption>
+            </figure>
+
+          </section>
+
+          <section class="popup">
+            <form class="popup__container" name="edit-form">
+                <h3 class="popup__title">Редактировать профиль</h3>
+                <input class="popup__input popup__input_type_name" type="text" name="username" value="">
+                <input class="popup__input popup__input_type_about-me" type="text" name="type-about-me" value="">
+                <button class="popup__save-button" type="submit">Сохранить</button>
+                <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+            </form>
+          </section>
+
+        </main>
+
+        <footer class="footer">
+          <p class="footer__copyright">© 2022. Ангелина Рожкова</p> 
+        </footer>
+
+      </div>
+    </div>
+
+    <script src="./script/index.js"></script> 
+
+</body>
+</html>
+
+<!-- !HTML -->
+<!-- ?На этой странице где заголовой h1? -->
+
+<!-- !CSS -->
+<!-- ? Кнопка-сердечко при нажатии становится чёрной, но не сохраняется. Так и должно было быть? -->
+<!-- ? Проблемы с надписью Сохранить в папапе -->
+
+<!-- !JavaScript -->

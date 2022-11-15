@@ -1,0 +1,12 @@
+.footer {
+    margin: 0;
+    padding: 40px 0 20px;
+}
+
+.footer::before {
+    content: "";
+    display: block;
+    margin: 0 0 20px;
+    border-bottom: 1px solid fuchsia;
+    opacity: 0.7;
+  }

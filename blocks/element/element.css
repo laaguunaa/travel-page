@@ -1,0 +1,20 @@
+.element {
+    margin: 0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 282px;
+    height: 361px;
+    -webkit-box-shadow: 0 0 10px fuchsia;
+            box-shadow: 0 0 10px fuchsia;
+}
+
+@media screen and (max-width: 600px) {
+    .element {
+        margin: 0 0 20px 0;
+    }
+
+    .element:last-child {
+        margin: 0;
+    }
+  }

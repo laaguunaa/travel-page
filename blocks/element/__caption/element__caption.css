@@ -1,0 +1,6 @@
+.element__caption {
+    margin: -5px 0 0;
+    padding: 0;
+    background-color: #ffff;
+    overflow: hidden;
+}
